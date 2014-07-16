@@ -1,0 +1,139 @@
+{
+	"M": {
+		"Title": "Tree of Ways",
+		"Author": "Fay Fooksie",
+		"Revision": 1.00
+		},
+	"P": "A CYOA (choose your own adventure) by Fxie",
+	"T": {
+		"R": "ENDGAME",
+		"P": "[COMPLETED] Thanks for playing!",
+		"C": {
+			"+ Bonus Content": {
+				"P": "..."
+				}
+			}
+		},
+	"C": {
+		"Begin": {
+			"P": "You're surrounded by trees. You've gotten lost in the forest. You hear the sound of falling water in the distance. You see light through the trees to your left, and darkness through the trees to your right. Which way do you go?",
+			"T": {
+				"R": "HEAVEN",
+				"P": "----------4th option to climb new tree for final branch etc----------"
+				},
+			"C": {
+				"Water": {
+					"P": "You follow the sound of crashing water as it grows louder... You arrive at a small waterfall pouring into a small basin leading off into a stream. A rainbow of colors magically illuminate the waters.",
+					"T": {
+						"R": "MAGWATER",
+						"P": "There's an odd tree here. It bends completely, dipping into the basin as if to drink from it.",
+						"T": {
+							"R": "MAGSWIM",
+							"P": "..."
+							}
+						},
+					"C": {
+						"Follow stream": {
+							"P": "Following the flow of colorful water, you approach a set of stones perfectly lining a path across the stream. You could've crossed at any other time, but this is the one time you won't get your feet wet.",
+							"C": {
+								"Cross": {
+									"P": "..."
+									},
+								"Continue": {
+									"P": "..."
+									}
+								}
+							},
+						"Go swimming": {
+							"P": "You dip a toe into the water to test the temperature--just right. However, you're unsure whether you want to get what's likely going to be your only set of clothes for a while wet.",
+							"C": {
+								"Continue": {
+									"P": "Then again, you're not too comfortable with the idea of removing them. You ease into the colorful water and immediately feel relaxed. Nothing like a good bath to forget all about being completely lost.\n\nWhile soaking it up, you notice a light eminating from the depths of your rather deep pool. You could've sworn it was fairly shallow before.",
+									"C": {
+										"Dive down": {
+											"P": "Feeling adventurous, you fill your lungs and plunge into the depths to find the light's source. There appears to be a tunnel deep below the waterfall!\n\nYou swim through the tunnel, then immediately resurface on the other side, gasping for air. You find yourself in a cave-like enclosure, and the magic waters light up the smooth walls with a beautiful aurora of colors.",
+											"C": {
+												"Search": {
+													"P": "There doesn't seem to be much here besides the spectacle. You feel around the walls in search of something, though you have no idea what you're looking for.\n\nA sharp pain rushes to your fingers, as if you just stubbed them on something! There's no visible protrusion from the wall in sight.",
+													"C": {
+														"Keep searching": {
+															"P": "..."
+															},
+														"Examine wall": {
+															"P": "There must be something there! Carefully, you glide your hand back along the wall where you felt something. You hit it again. You don't see anything, though?\n\nThere appears to be an invisible key sticking out of the wall. You can certainly wrap your fingers around it, but your eyes can't experience it. What do you do with it?",
+															"C": {
+																"Turn it": {
+																	"P": "You turn the key. Nothing happens.\n\nWait... you can feel water around your ankles. It's rising! The cave is completely enclosed, you have to hurry back through the tunnel before you run out of air!",
+																	"C": {
+																		"Escape": {
+																			"F": "CAVEKEY",
+																			"P": "Stealing as much oxygen as you can, you hold your breath and rush to the bottom of the cave. There's no light this time. As your lungs give in, you frantically search for the tunnel, but you can't find it!\n\n...\n\nYou exhale, then inhale water before losing consciousness."
+																			}
+																		}
+																	},
+																"Pull it free": {
+																	"P": "...",
+																	"C": {
+																		"Escape": "CAVESCAPE"
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											},
+										"Ignore it": {
+											"P": "Must be your imagination. Perhaps you're still a little too stressed out from this whole situation. You should just relax.",
+											"C": {
+												"Relax": {
+													"F": "MAGSWIM",
+													"P": "You lay back against a soft rock by the edge of the basin and begin to close your eyes...\n\nSuddenly you feel a heavy weight pulling you down! You snap to and frantically claw at the rock to escape, but the force builds up and pulls you under! Already completely submerged, you look down and only see an endless void of darkness!\n\n...\n\nThe light of day fades from your view before losing consciousness."
+													}
+												}
+											}
+										}
+									},
+								"Skinny dip": {
+									"P": "..."
+									}
+								}
+							},
+						"Drink water": {
+							"P": "You kneel before the basin and cup your hands in the colorful water, bringing some to your mouth. The water feels cool, but when it hits your tongue it's icy.",
+							"C": {
+								"Stand up": {
+									"P": "You attempt to rise, but your arms and legs suddenly weigh a ton! You're brought down to all fours in front of the now mesmerizing magical waters.",
+									"C": {
+										"Drink water": {
+											"F": "MAGWATER",
+											"P": "Having no other option--no, nothing else you would rather do--you lap up the mystical water like a thirsty kitten. It does taste delightful, after all.\n\n...\n\nYou quickly grow drowsy, and happily drift off to sleep. You don't wake up."
+											}
+										}
+									},
+								"Another sip": {
+									"F": "MAGWATER",
+									"P": "Unable to resist the refreshing feel of the magical water on your tongue, you decide to drink some more... and more... and more...\n\n...\n\nYou quickly grow drowsy, and happily drift off to sleep. You don't wake up."
+									}
+								}
+							}
+						}
+					},
+				"Light": {
+					"P": "..."
+					},
+				"Darkness": {
+					"P": "..."
+					}
+				}
+			},
+		"Help": {
+			"E": false,
+			"P": "Tree of Ways is a CYOA (choose your own adventure) game. You make choices, which lead to different sets of choices, which branch off further until you reach the end of your journey. The choices you make determine where you end up, just like in any story-based game. The format here is simply more straightforward.\n\nSome paths may be revealed only after following another path in your previous journey. To keep track of your progress, reference the status bar at the top of the window.\n\nYou may navigate by WASD or arrow keys. You can select an option by pressing RIGHT, ENTER, or SPACE. Whatever you're comfortable with."
+			},
+		"About": {
+			"E": false,
+			"P": "This game is heavily inspired by the simplicity and limitations of classic console games. The design is based on the command-line interface (CLI), most widely known for its usage in disk operating systems (DOS) or cmd.exe on modern computers.\n\nThis is a very simple choose-your-own-adventure game with a small twist. There isn't much to it, and that's the beauty of it. Hopefully you will find that beauty."
+			}
+		}
+	}

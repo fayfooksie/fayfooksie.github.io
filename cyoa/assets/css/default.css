@@ -1,0 +1,46 @@
+body {
+	cursor: default;
+	margin: 0 2ch;
+	color: white;
+	font-family: "Courier New", "Courier", monospace;
+	line-height: 1em;
+	background: black;
+	}
+
+.right {
+	float: right;
+	margin-left: 1ch;
+	}
+
+#status {
+	min-height: 1em;
+	margin-bottom: 1em;
+	padding: 0 1ch;
+	color: black;
+	background: white;
+	}
+
+#prompt {
+	margin: 1em 0;
+	white-space: pre-wrap;
+	}
+
+#options {
+	margin: 1em 1ch;
+	}
+
+#options > div {
+	white-space: pre-wrap;
+	}
+
+#options > div::before {
+	content: "  ";
+	}
+
+#options > div.selected::before {
+	content: "> ";
+	}
+
+#options > div.selected::after {
+	content: " <";
+	}

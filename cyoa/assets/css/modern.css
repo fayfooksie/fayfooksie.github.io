@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Monofur";
+	src: url("../fonts/monof55.ttf");
+	}
+
+body {
+	color: #f8f8f8;
+	font-family: "Monofur", monospace;
+	background: #141414;
+	}
+
+#status {
+	color: #141414;
+	background: #f8f8f8;
+	}
+
+#options > div.selected::before {
+	content: "o ";
+	}
+
+#options > div.selected::after {
+	content: " o";
+	}
